@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,IAAI,AAAC,CACD,eAAe,CAAE,MAAM,CAC1B",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/vars.scss",
+        "../sass/mixin.scss",
+        "../sass/vars.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
