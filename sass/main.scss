@@ -17,7 +17,7 @@ header {
         justify-content: space-between;
 
         #logo {
-            margin-top: 18px;
+            margin-top: 20px;
             border-radius: 10%;
             filter: drop-shadow(2px 2px 2px black);
 
@@ -50,7 +50,6 @@ header {
                             font-weight: bold;
                             font-size: 1.18em;
                             transition: 0.1s all;
-                            border-bottom: 2px solid white;
                         }
 
                         #whitehome {
@@ -123,7 +122,7 @@ main {
         .profile {
             background-color: $lightgray;
             height: 500px;
-            transform: translateY(-20%);
+            transform: translateY(-30%);
             box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px 10px;
 
             .flexbox {
@@ -159,31 +158,162 @@ main {
 
         .service {
             margin-top: 80px;
+            background-color: $skyblue;
 
             h3 {
                 text-align: center;
+                color: white;
+                padding-top: 100px;
+                padding-bottom: 100px;
+                font-weight: bold;
+            }
+
+            .btn {
+                background-color: white;
+                outline: none;
+                display: block;
+                width: 200px;
+                margin: 0 auto;
+                color: $skyblue;
+                border: none;
+                font-weight: bold;
+                transform: translateY(-200%);
+
+                &:hover {
+                    background-color: $lightgray;
+                    border-radius: 30px;
+                    transition: 1s all;
+                }
             }
 
             .serviceframe {
                 display: flex;
                 justify-content: space-around;
-                margin-top: 150px;
-                margin-bottom: 150px;
-                height: 500px;
-                background-color: $dirtyblue;
+                padding-bottom: 200px;
 
-                #carouselExampleIndicators{
-                    .carousel-inner{
-                        .carousel-item{
-                            padding: 0px 255px;
-                            p{
-                                max-width: 600px;
-                                margin-top: 150px;
-                            }
+                .services {
+                    width: 20%;
+                    text-align: center;
+
+                    &:nth-child(1) {
+                        transform: translateY(40%);
+                    }
+
+                    &:nth-child(4) {
+                        transform: translateY(40%);
+                    }
+
+                    .emoji {
+                        font-size: 3em;
+                    }
+
+                    p {
+                        color: white;
+                    }
+                }
+            }
+
+
+        }
+
+        .border {
+            width: 100%;
+            background-color: $lightgray;
+
+            h4 {
+                margin-top: 150px;
+                margin-bottom: 70px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            h5 {
+                text-align: center;
+                margin-bottom: 50px;
+                font-size: 1.5em;
+            }
+
+            p {
+                margin: 70px;
+            }
+
+            .btn {
+                background-color: $skyblue;
+                outline: none;
+                display: block;
+                width: 200px;
+                margin: 0 auto;
+                color: white;
+                border: none;
+                font-weight: bold;
+                margin-bottom: 100px;
+
+                &:hover {
+                    border-radius: 30px;
+                    transition: 1s all;
+                }
+            }
+        }
+
+        .last {
+            background-attachment: fixed;
+            background-color: $skyblue;
+            .flexbox {
+                display: flex;
+                justify-content: space-between;
+                .left {
+                    width: 50%;
+                    h6{
+                        font-size: 2em;
+                        margin-top: 150px;
+                        margin-bottom: 50px;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    p{
+                        color: white;
+                    }
+                    .btn {
+                        background-color: white;
+                        outline: none;
+                        display: block;
+                        width: 300px;
+                        color: $skyblue;
+                        border: none;
+                        font-weight: bold;
+                        margin-top: 80px;
+        
+                        &:hover {
+                            background-color: $lightgray;
+                            border-radius: 30px;
+                            transition: 1s all;
+                        }
+                    }
+                }
+
+                .right {
+                    width: 50%;
+                    margin: 150px 0px 100px 0px;
+                    .phoneborder {
+                        width: 300px;
+                        background-image: url(https://toppng.com/uploads/thumbnail//erie-otters-mobile-app-on-android-empty-phone-frame-11562941661bkdubzcuxt.png);
+                        background-size: cover;
+                        height: 620px;
+                        margin: 0 auto;
+                        img {
+                            width: 280px;
+                            height: 498px;
+                            border-radius: 5px;
+                            transform: translate(4.1%, 13%);
                         }
                     }
                 }
             }
         }
     }
+}
+
+footer {
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

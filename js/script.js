@@ -5,6 +5,7 @@ let whitehome = document.querySelector("#whitehome");
 let logo = document.querySelector("#logo")
 
 
+
 window.onscroll = function () {
     if (document.body.scrollTop >= 1 || document.documentElement.scrollTop >= 1) {
         myNav.style.backgroundColor = '#F2F2F2';
@@ -29,9 +30,12 @@ window.onscroll = function () {
         blackhome.style.display = 'none';
         whitehome.style.display = 'block';
         logo.style.background = 'transparent';
-        logo.style.filter = 'drop-shadow(2px 2px 2px black)';
+        logo.style.filter = 'rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px';
     }
 };
+
+
+
 
 
 
