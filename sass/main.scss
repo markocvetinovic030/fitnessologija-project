@@ -5,3 +5,185 @@ html {
     scroll-behavior: smooth;
 }
 
+header {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    z-index: 1;
+
+    .flexbox {
+        display: flex;
+        justify-content: space-between;
+
+        #logo {
+            margin-top: 18px;
+            border-radius: 10%;
+            filter: drop-shadow(2px 2px 2px black);
+
+            img {
+                width: 60px;
+            }
+        }
+
+        nav {
+            padding-top: 55px;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                gap: 50px;
+
+                li {
+                    margin-left: 50px;
+
+                    a {
+                        color: white;
+                        padding-bottom: 5px;
+                        position: absolute;
+                        font-weight: bold;
+                        font-size: 1.1em;
+                        transform: translate(-50%, -50%);
+
+                        &:hover {
+                            text-decoration: none;
+                            font-weight: bold;
+                            font-size: 1.18em;
+                            transition: 0.1s all;
+                            border-bottom: 2px solid white;
+                        }
+
+                        #whitehome {
+                            width: 38px;
+                            position: absolute;
+                            transform: translate(-50%, -50%);
+
+                            &:hover {
+                                font-weight: bold;
+                                width: 41px;
+                                transition: 0.1s all;
+                            }
+                        }
+
+                        #blackhome {
+                            width: 48px;
+                            position: absolute;
+                            transform: translate(-50%, -50%);
+                            display: none;
+
+                            &:hover {
+                                font-weight: bold;
+                                width: 52px;
+                                transition: 0.1s all;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    .hero {
+        background-image: url(https://3.bp.blogspot.com/-37AjC4B9Hec/XGLmdMkjumI/AAAAAAAACjM/30jfjZwAsXAc2pmI0mQ5SrTCgdrVINAfgCKgBGAs/w0/hailee-steinfeld-fitness-brunette-girl-4K-188.jpg);
+        background-size: cover;
+        height: 800px;
+        background-attachment: fixed;
+
+        .gradient {
+            background: rgb(0, 191, 255);
+            background: linear-gradient(180deg, rgba(0, 191, 255, 1) 0%, rgba(0, 191, 255, 0.40379901960784315) 0%);
+            height: 800px;
+
+            .wframe {
+                padding-top: 230px;
+                text-align: center;
+
+                h1 {
+                    margin-bottom: 30px;
+                    margin-top: 100px;
+                    color: white;
+                    filter: drop-shadow(10px 10px 5px black);
+                }
+
+                p {
+                    font-size: 1.1em;
+                    color: white;
+                    filter: drop-shadow(5px 5px 5px black);
+                }
+            }
+        }
+    }
+
+    .content {
+        background-color: white;
+
+        .profile {
+            background-color: $lightgray;
+            height: 500px;
+            transform: translateY(-20%);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px 10px;
+
+            .flexbox {
+                display: flex;
+                justify-content: space-between;
+
+                .left {
+                    width: 50%;
+
+                    img {
+                        width: 100%;
+                        height: 500px;
+                    }
+                }
+
+                .right {
+                    width: 50%;
+
+                    h2 {
+                        text-align: center;
+                        margin-top: 60px;
+                        margin-bottom: 50px;
+                    }
+
+                    p {
+                        max-width: 400px;
+                        margin: 0 auto;
+                    }
+                }
+
+            }
+        }
+
+        .service {
+            margin-top: 80px;
+
+            h3 {
+                text-align: center;
+            }
+
+            .serviceframe {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 150px;
+                margin-bottom: 150px;
+                height: 500px;
+                background-color: $dirtyblue;
+
+                #carouselExampleIndicators{
+                    .carousel-inner{
+                        .carousel-item{
+                            padding: 0px 255px;
+                            p{
+                                max-width: 600px;
+                                margin-top: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
