@@ -21,57 +21,75 @@
 </head>
 
 <body>
-    <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-            <span></span>
-        </label>
+    <div class="blur">
+        <div class="modal">
+            <div class="content">
 
-        <ul class="menu__box">
-            <li><a class="menu__item" href="index.html">Pocetna</a></li>
-            <li><a class="menu__item" href="klijenti.html">Klijenti</a></li>
-            <li><a class="menu__item" href="#">Usluge</a></li>
-            <li><a class="menu__item" href="#">EBook</a></li>
-            <li><a class="menu__item" href="#">Kontakt</a></li>
-        </ul>
-        <div id="logores">
-            <img src="img/logo.png" alt="logo">
-        </div>
-    </div>
+                <div class="close"></div>
 
-    <header>
-        <div class="container">
-
-            <div class="flexbox">
-                <div id="logo">
-                    <img src="img/logo.png" alt="logo">
+                <div class="text">
+                    <p id="h"> DOBRODOSLI BLA BLA BLA</p>
+                    <a href="ebook.html">Ovde skini E-Book besplatno!</a>
+                    <img src="img/ebook.png" alt="E-Book">
                 </div>
-
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="index.html"><img id="blackhome" src="img/home2.png" alt="Home"></a>
-                            <a href="index.html"><img id="whitehome" src="img/home.png" alt="Home"></a>
-                        </li>
-                        <li>
-                            <a id="firsta" href="klijenti.html">Klijenti</a>
-                        </li>
-                        <li>
-                            <a id="seconda" href="#">Usluge</a>
-                        </li>
-                        <li>
-                            <a id="thirda" href="#">EBook</a>
-                        </li>
-                        <li>
-                            <a id="fourtha" href="#">Kontakt</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
         </div>
+
+
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <li><a class="menu__item" href="index.html">Pocetna</a></li>
+                <li><a class="menu__item" href="klijenti.html">Klijenti</a></li>
+                <li><a class="menu__item" href="usluge.html">Usluge</a></li>
+                <li><a class="menu__item" href="#">E-Book</a></li>
+                <li><a class="menu__item" href="#">Kontakt</a></li>
+            </ul>
+            <div id="logores">
+                <img src="img/logo.png" alt="logo">
+            </div>
         </div>
+
+        <header>
+            <div class="container">
+
+                <div class="flexbox">
+                    <div id="logo">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html"><img id="blackhome" src="img/home2.png" alt="Home"></a>
+                                <a href="index.html"><img id="whitehome" src="img/home.png" alt="Home"></a>
+                            </li>
+                            <li>
+                                <a id="firsta" href="klijenti.html">Klijenti</a>
+                            </li>
+                            <li>
+                                <a id="seconda" href="usluge.html">Usluge</a>
+                            </li>
+                            <li>
+                                <a id="thirda" href="#">E-Book</a>
+                            </li>
+                            <li>
+                                <a id="fourtha" href="#">Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </div>
     </header>
     <main>
+        <div class="fixedbutton">
+            <a class="btn btn-primary" href="usluge.html" role="button">Zelim da postanem klijent</a>
+        </div>
         <div class="hero">
             <div class="gradient">
                 <div class="container">
@@ -121,7 +139,7 @@
                     <h3> Šta dobiješ u sklopu mentorstva?</h3>
                     <div class="serviceframe">
                         <div class="services">
-                            <p class="emoji">🏃‍♂️</p>
+                            <p class="emoji"><img src="img/individualniprisatup.png" alt="Individualni pristup"></p>
                             <p class="mainp">1. INDIVIDUALNI PRISTUP</p>
                             <p> U sklopu programa dobijaš individualno sastavljen plan ishrane i treninga shodno tvojim
                                 ciljevima koje želiš da postigneš. Programi su maksimalno fleksibilno napravljeni kako
@@ -129,7 +147,7 @@
                         </div>
 
                         <div class="services">
-                            <p class="emoji">🏋️</p>
+                            <p class="emoji"><img src="img/progres.png" alt="Pracenje Napredka"></p>
                             <p class="mainp">2. PRAĆENJE NAPRETKA</p>
                             <p>Na svakih 7 dana šalješ izveštaj šta si radio u toku nedelje i kako teče napredak. Shodno
                                 tome programiramo perfetak program koji će ti garantovati uspeh. (naravno ukoliko pratiš
@@ -137,14 +155,14 @@
                         </div>
 
                         <div class="services">
-                            <p class="emoji">💪</p>
+                            <p class="emoji"><img src="img/komunikacija.png" alt="Kontakt sa klijentima"></p>
                             <p class="mainp">3. KOMUNIKACIJA SA KLIJENTOM</p>
                             <p>Za sva pitanja i nejasnoće stojim ti na raspolaganju kako bi sam proces bi ovaj program
                                 što brže savladao i došao do željenih rezultata. Takodje pored redovnog dopisivanja
                                 dobijate bonus konsultacije 1na1 sa mnom. </p>
                         </div>
                         <div class="services">
-                            <p class="emoji">⛹️</p>
+                            <p class="emoji"><img src="img/onlinecoach.png" alt="Online Trener"></p>
                             <p class="mainp">4. ONLINE TRENER</p>
                             <p>Online trener je tu za tebe kako biti sastavio plan ishrane i treninga shodno tvojim
                                 ciljevima. Cilj online mentorsva je da osoba prvenstveno stekne zdrave navike koje su mu
@@ -159,7 +177,7 @@
 
             <div class="border">
                 <div class="container">
-                    <h4>VAŠ USPEH JE 100% ZAGARANTOVAN UKOLIKO POŠTUJEŠ PROGRAM.</h4>
+                    <h4>VAŠ USPEH JE 100% ZAGARANTOVAN UKOLIKO POŠTUJEŠ PROGRAM!</h4>
                     <h5>NIJE POTREBNO NIKAKVO PREDZNANJE</h5>
                     <p>Online mentorstvo je napravljeno za bilo koju osobu koja želi da ostavari fitness ciljeve bilo to
                         da je potpuni početnik koji nikada nije imao dodir sa fitnessom do naprednog vežbača koji je na
@@ -202,8 +220,10 @@
                                 ornare. Morbi suscipit consectetur vulputate. In varius felis a sagittis vulputate. Sed
                                 sed mi iaculis nisi venenatis pellentesque. </p>
                             <div class="sides">
-                                <a class="btn btn-primary" href="https://www.instagram.com/fitnessologija/" target="_blank" role="button">Pogledaj Instagram stranicu</a>
-                                <a class="btn btn-primary" href="https://www.tiktok.com/@fitnessologija?lang=en" target="_blank" role="button">Pogledaj TikTok stranicu</a>
+                                <a class="btn btn-primary" href="https://www.instagram.com/fitnessologija/"
+                                    target="_blank" role="button">Pogledaj Instagram stranicu</a>
+                                <a class="btn btn-primary" href="https://www.tiktok.com/@fitnessologija?lang=en"
+                                    target="_blank" role="button">Pogledaj TikTok stranicu</a>
                             </div>
                         </div>
                         <div class="right">
@@ -240,6 +260,7 @@
                 </div>
             </div>
         </div>
+
     </footer>
 
 
@@ -254,6 +275,15 @@
     </script>
 
     <script src="js/script.js"></script>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@ let logo = document.querySelector("#logo")
 
 
 
+
 window.onscroll = function () {
     if (document.body.scrollTop >= 1 || document.documentElement.scrollTop >= 1) {
         myNav.style.backgroundColor = '#F2F2F2';
@@ -20,7 +21,7 @@ window.onscroll = function () {
         logo.style.backgroundColor = '#00BFFF';
         logo.style.filter = 'none';
     } else {
-        myNav.style.backgroundColor = 'transparent';   
+        myNav.style.backgroundColor = 'transparent';
         myNav.style.boxShadow = 'none';
         firsta.style.color = 'white';
         seconda.style.color = 'white';
@@ -35,10 +36,24 @@ window.onscroll = function () {
 };
 
 
+setTimeout(() => {
 
+    $('.modal').addClass('open');
 
+if ($('.modal').hasClass('open')) {
 
+    $('.container').addClass('blur');
 
+}
 
+$('.close').click(function () {
+
+    $('.modal').removeClass('open');
+
+    $('.cont').removeClass('blur');
+
+});
+
+}, "5000")
 
 
