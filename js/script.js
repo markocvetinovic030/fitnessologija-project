@@ -36,24 +36,24 @@ window.onscroll = function () {
 };
 
 
-setTimeout(() => {
-
-    $('.modal').addClass('open');
-
-if ($('.modal').hasClass('open')) {
-
-    $('.container').addClass('blur');
-
-}
-
-$('.close').click(function () {
-
-    $('.modal').removeClass('open');
-
-    $('.cont').removeClass('blur');
-
-});
-
-}, "5000")
+//setTimeout(() => {
+//
+//    $('.modal').addClass('open');
+//
+//if ($('.modal').hasClass('open')) {
+//
+//    $('.container').addClass('blur');
+//
+//}
+//
+//$('.close').click(function () {
+//
+//    $('.modal').removeClass('open');
+//
+//    $('.cont').removeClass('blur');
+//
+//});
+//
+//}, "5000")
 
 

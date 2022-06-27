@@ -20,7 +20,7 @@
 
 
 
-    
+
 .modal {
     position: fixed;
     top: 0;
@@ -45,26 +45,31 @@
     box-shadow: rgba(112, 128, 175, 0.2)0px 16px 24px 0px;
     transform: scale(0);
     transition: transform300ms cubic-bezier(0.57, 0.21, 0.69, 1.25);
-    .text{
+
+    .text {
         text-align: center;
         margin-top: 50px;
-        #h{
+
+        #h {
             font-size: 2em;
             font-weight: bold;
             margin-bottom: 50px;
             color: white;
         }
-        a{
+
+        a {
             font-size: 1.1em;
             color: white;
             transform: translate(-50%, -50%);
-            &:hover{
+
+            &:hover {
                 text-decoration: none;
                 font-size: 1.2em;
                 transition: 1s all;
             }
         }
-        img{
+
+        img {
             width: 200px;
             display: block;
             margin: 0 auto;
@@ -293,6 +298,8 @@ main {
                 }
 
             }
+
+
         }
 
         .service {
@@ -342,7 +349,7 @@ main {
                         margin-bottom: 50px;
 
                         img {
-                            width: 60px;
+                            width: 90px;
                             filter: drop-shadow(2px 2px 2px gray);
                         }
                     }
@@ -355,7 +362,7 @@ main {
 
                     .mainp {
                         font-weight: bold;
-                        font-size: 1.1em;
+                        font-size: 1.3em;
                         filter: drop-shadow(1px 1px 1px black);
                     }
                 }
@@ -546,6 +553,168 @@ main {
         }
     }
 }
+
+
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+
+    .placanja {
+        display: block;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
+        width: 320px;
+        text-align: center;
+        background-color: $lightgray;
+        margin: 100px 0px;
+
+        .cena {
+            padding: 20px 50px;
+
+            #meseci {
+                margin-bottom: 10px;
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+
+            #line {
+                width: 100%;
+                border: 1px solid black;
+            }
+
+            #cena {
+                font-size: 50px;
+                margin-top: 30px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .cenadva {
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+
+            .usteda {
+                font-weight: bold;
+                font-size: 1.1em;
+                margin-bottom: 50px;
+            }
+
+            .sadrzaj {
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+
+            .btn {
+                background-color: $skyblue;
+                border: none;
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-top: 40px;
+                margin-bottom: 20px;
+                padding: 5px 50px;
+                filter: drop-shadow(1px 1px 1px black);
+
+                &:hover {
+                    border-radius: 30px;
+                    transition: 1s all;
+                }
+            }
+        }
+
+        .top {
+            height: 50px;
+            background-color: $skyblue;
+            filter: drop-shadow(1px 1px 1px gray);
+        }
+
+        .bottom {
+            height: 50px;
+            background-color: $skyblue;
+            filter: drop-shadow(1px 1px 1px gray);
+        }
+    }
+
+}
+
+.mainpay {
+    width: 100%;
+    background-color: $lightgray;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
+    margin-bottom: 100px;
+    .cena{
+        padding: 50px 100px;
+        display: inline-block;
+        #meseci{
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        #line {
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        #cena {
+            font-size: 80px;
+            margin-top: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .cenadva {
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-left: 20px;
+        }
+
+        .usteda {
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-left: 28px;
+        }
+    }
+
+    .framesadzaj{
+        display: inline-block;
+        margin-left: 200px;
+
+        .sadrzaj {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .btn {
+            background-color: $skyblue;
+            
+            border: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding: 5px 50px;
+            filter: drop-shadow(1px 1px 1px black);
+
+            &:hover {
+                border-radius: 30px;
+                transition: 1s all;
+            }
+        }
+    }
+
+    .top {
+        height: 50px;
+        background-color: $skyblue;
+        filter: drop-shadow(1px 1px 1px gray);
+    }
+
+    .bottom {
+        height: 50px;
+        background-color: $skyblue;
+        filter: drop-shadow(1px 1px 1px gray);
+    }
+}
+
 
 
 footer {
