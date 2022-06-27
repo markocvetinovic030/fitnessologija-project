@@ -116,6 +116,7 @@ html {
     display: inline-block;
     position: fixed;
     transform: translate(30%, 1690%);
+    z-index: 1;
 
     .btn {
         background-color: #FFA500;
@@ -494,8 +495,10 @@ main {
 }
 
 
-.hero2 {
-    background-color: $skyblue;
+.hero3 {
+    background-image: url(https://i.redd.it/y7k1jmzei7061.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 800px;
     background-attachment: fixed;
 
@@ -512,14 +515,87 @@ main {
                 margin-bottom: 30px;
                 margin-top: 100px;
                 color: white;
-                filter: drop-shadow(10px 10px 5px black);
+                filter: drop-shadow(2px 2px 2px black);
             }
 
             p {
                 font-size: 1.1em;
                 color: white;
-                filter: drop-shadow(5px 5px 5px black);
+                filter: drop-shadow(2px 2px 2px black);
+                font-weight: bold;
             }
+
+
+        }
+    }
+}
+
+.hero4 {
+    background-image: url(https://pbs.twimg.com/media/D3rsBo3XoAAvpXC.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    background-attachment: fixed;
+
+    .gradient {
+        background: rgb(0, 191, 255);
+        background: linear-gradient(180deg, rgba(0, 191, 255, 1) 0%, rgba(0, 191, 255, 0.40379901960784315) 0%);
+        height: 800px;
+
+        .wframe {
+            padding-top: 230px;
+            text-align: center;
+
+            h1 {
+                margin-bottom: 30px;
+                margin-top: 100px;
+                color: white;
+                filter: drop-shadow(2px 2px 2px black);
+            }
+
+            p {
+                font-size: 1.1em;
+                color: white;
+                filter: drop-shadow(2px 2px 2px black);
+                font-weight: bold;
+            }
+
+
+        }
+    }
+}
+
+.hero2 {
+    background-image: url(https://a-static.besthdwallpaper.com/hailee-steinfeld-fitness-workout-wallpaper-2560x1920-43717_27.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    background-attachment: fixed;
+
+    .gradient {
+        background: rgb(0, 191, 255);
+        background: linear-gradient(180deg, rgba(0, 191, 255, 1) 0%, rgba(0, 191, 255, 0.40379901960784315) 0%);
+        height: 800px;
+
+        .wframe {
+            padding-top: 230px;
+            text-align: center;
+
+            h1 {
+                margin-bottom: 30px;
+                margin-top: 100px;
+                color: white;
+                filter: drop-shadow(2px 2px 2px black);
+            }
+
+            p {
+                font-size: 1.1em;
+                color: white;
+                filter: drop-shadow(2px 2px 2px black);
+                font-weight: bold;
+            }
+
+
         }
     }
 }
@@ -642,14 +718,17 @@ main {
     background-color: $lightgray;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
     margin-bottom: 100px;
-    .cena{
+
+    .cena {
         padding: 50px 100px;
         display: inline-block;
-        #meseci{
+
+        #meseci {
             text-align: center;
             font-weight: bold;
             font-size: 1.3em;
         }
+
         #line {
             width: 100%;
             border: 1px solid black;
@@ -675,7 +754,7 @@ main {
         }
     }
 
-    .framesadzaj{
+    .framesadzaj {
         display: inline-block;
         margin-left: 200px;
 
@@ -686,7 +765,7 @@ main {
 
         .btn {
             background-color: $skyblue;
-            
+
             border: none;
             font-weight: bold;
             font-size: 1.2em;
@@ -715,6 +794,46 @@ main {
     }
 }
 
+.contactpage {
+    padding: 190px 0px 0px 0px;
+
+    .formframe {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px 10px;
+        background-color: $lightgray;
+        transform: translateY(-50%);
+        p {
+            margin-bottom: 50px;
+            font-weight: bold;
+        }
+
+        .left {
+            width: 50%;
+            padding: 100px 50px;
+        }
+
+        .right {
+           
+        }
+        #submit{
+            background-color: $skyblue;
+            outline: none;
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            margin-top: 80px;
+            color: white;
+            border: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            filter: drop-shadow(1px 1px 1px gray);
+
+            &:hover {
+                border-radius: 30px;
+                transition: 1s all;
+            }
+        }
+    }
+}
 
 
 footer {
